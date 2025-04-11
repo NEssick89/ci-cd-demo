@@ -2,7 +2,7 @@ name: Build Docker Image
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   build:
@@ -17,3 +17,5 @@ jobs:
 
     - name: Build Docker image
       run: docker build -t ci-cd-demo .
+
+# Triggering manual CI run
